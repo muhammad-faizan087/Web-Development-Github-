@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+}
+.main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/150c4b42-11f6-4576-a00f-c631308b1e43/web/PK-en-20241216-TRIFECTA-perspective_fdcc1a08-2116-4afa-a88b-15210264cacd_large.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main .box {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+.main .nav {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 4%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+.content {
+  height: 80%;
+  max-width: 40%;
+  position: absolute;
+  color: white;
+  top: 0%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+.content span:nth-child(1) {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Poppins", serif;
+  line-height: 1.25;
+}
+.content span:nth-child(2) {
+  margin: 8px auto;
+  font-weight: bold;
+  font-size: large;
+}
+.content span:nth-child(3) {
+  margin: 0;
+  font-weight: 500;
+  font-size: medium;
+}
+.start {
+  position: absolute;
+  z-index: 4;
+  top: 72%;
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.start input {
+  height: 45px;
+  width: 330px;
+  background-color: rgb(24 23 23 / 85%);
+  padding: 5px 10px;
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 4px;
+  color: white;
+}
+.start input::placeholder {
+  color: rgb(175, 174, 174);
+  font-size: 15px;
+  font-weight: 600;
+}
+.btn {
+  color: white;
+  background-color: rgb(229, 9, 20);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  height: 30px;
+  cursor: pointer;
+}
+.btn-start {
+  height: 55px;
+  font-size: x-large;
+  font-weight: 400;
+  max-width: 250px;
+  padding: 0 20px;
+}
+.seperation {
+  height: 5px;
+  width: 100vw;
+  background-color: gray;
+}
+.section {
+  position: relative;
+  max-width: 70vw;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.sec-image {
+  position: relative; /* Ensure the video is positioned relative to this container */
+}
+
+.sec-image video {
+  position: absolute;
+  top: 48%; /* Center vertically within the image */
+  left: 50%; /* Center horizontally within the image */
+  transform: translate(-50%, -50%); /* Adjust for proper centering */
+  width: 72%; /* Adjust the size relative to the image */
+  height: auto; /* Maintain aspect ratio */
+  pointer-events: none; /* Ensure the video doesn't block interactions */
+  z-index: -1;
+}
+
+.secdata div:first-child {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: "Poppins", serif;
+}
+.secdata div:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  max-width: 80vw;
+  margin: auto;
+}
+.faq h2 {
+  color: white;
+  margin: 30px 0px;
+}
+.faq .faqbox {
+  height: 30px;
+  width: 70vw;
+  background-color: gray;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 3px;
+  cursor: pointer;
+}
+.faq .faqbox:hover {
+  background-color: #414141;
+  transition: background-color 1s ease-out;
+}
+@media only screen and (max-width: 900px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .secdata div:first-child {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+  }
+  .secdata div:nth-child(2) {
+    font-size: 8px;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+  }
+}
